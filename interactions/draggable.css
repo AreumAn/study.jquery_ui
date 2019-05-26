@@ -1,0 +1,8 @@
+.ui-widget-content {
+    width: 150px;
+    height: 150px;
+    padding: 0.5em;
+    border: green 1px solid;
+    margin: 10px;
+    float: left;
+}
