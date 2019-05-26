@@ -1,12 +1,14 @@
 $(function() {
-    $("#draggable").draggable();
+    $("#draggable").draggable({
+        axis: "y"
+    });
     $("#draggable2").draggable({
-        scroll: true,
-        scrollSensitivity: 1000
+        axis: "x"
     });
     $("#draggable3").draggable({
-        scroll: true,
-        scrollspeed: 100
+        containment: "#containment-wrapper",
     });
-
+    $("#draggable4").draggable({
+        containment: "parent",
+    });
 });
