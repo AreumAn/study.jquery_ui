@@ -14,25 +14,18 @@
 </head>
 
 <body>
-    <h3>Constrain movement along an axis:</h3>
+    <div id="draggable" class="ui-widget ui-widget-content">
 
-    <div id="draggable" class="draggable ui-widget-content">
-        <p>I can be dragged only vertically</p>
-    </div>
+        <p>Drag me to trigger the chain of events.</p>
 
-    <div id="draggable2" class="draggable ui-widget-content">
-        <p>I can be dragged only horizontally</p>
-    </div>
-
-    <h3>Or to within another DOM element:</h3>
-    <div id="containment-wrapper">
-        <div id="draggable3" class="draggable ui-widget-content">
-            <p>I'm contained within the box</p>
-        </div>
-
-        <div class="draggable ui-widget-content">
-            <p id="draggable4" class="ui-widget-header">I'm contained within my parent</p>
-        </div>
+        <ul class="ui-helper-reset">
+            <li id="event-start" class="ui-state-default ui-corner-all"><span
+                    class="ui-icon ui-icon-play"></span>"start" invoked <span class="count">0</span>x</li>
+            <li id="event-drag" class="ui-state-default ui-corner-all"><span
+                    class="ui-icon ui-icon-arrow-4"></span>"drag" invoked <span class="count">0</span>x</li>
+            <li id="event-stop" class="ui-state-default ui-corner-all"><span class="ui-icon ui-icon-stop"></span>"stop"
+                invoked <span class="count">0</span>x</li>
+        </ul>
     </div>
 </body>
 
