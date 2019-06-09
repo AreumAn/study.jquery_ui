@@ -34,7 +34,7 @@ _Multiple types supported:_
 - ***Boolean***: When set to true, the items will animate with the default duration.
 - ***Number***: The duration for the animation, in milliseconds.
 
-```
+```js
 // Getter
 var revert = $( ".selector" ).sortable( "option", "revert" );
 
@@ -73,7 +73,7 @@ _Multiple types supported:_
 - ***Boolean***: When set to true, the element will snap to all other draggable elements.
 - ***Selector***: A selector specifying which elements to snap to.
 
-```
+```js
 // Getter
 var snap = $( ".selector" ).draggable( "option", "snap" );
 
@@ -93,7 +93,7 @@ Determines which edges of snap elements the draggable will snap to. Ignored if t
 
 Possible values: `inner`, `outer`, `both`.
 
-```
+```js
 // Getter
 var snapMode = $( ".selector" ).draggable( "option", "snapMode" );
 
@@ -101,3 +101,19 @@ var snapMode = $( ".selector" ).draggable( "option", "snapMode" );
 $( ".selector" ).draggable( "option", "snapMode", "inner" );
 ```
 
+---
+
+## stack
+
+Type: **Selector**
+Default: **false**
+
+Controls the z-index of the set of elements that match the selector, always brings the currently dragged item to the front. Very useful in things like window managers.
+
+```js
+// Getter
+var stack = $( ".selector" ).draggable( "option", "stack" );
+
+// Setter
+$( ".selector" ).draggable( "option", "stack", ".products" );
+```
