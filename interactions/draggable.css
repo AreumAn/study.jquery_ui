@@ -1,12 +1,12 @@
-#draggable,
-#draggable2 {
-    width: 100px;
-    height: 100px;
-    padding: 0.5em;
-    float: left;
-    margin: 0 10px 10px 0;
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 10px;
 }
 
-#draggable p {
-    cursor: move;
+li {
+    margin: 5px;
+    padding: 5px;
+    width: 150px;
 }

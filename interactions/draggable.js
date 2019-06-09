@@ -1,4 +1,11 @@
 $(function() {
-    $("#draggable").draggable( { handle: "p" });
-    $("#draggable2").draggable( { cancel: "p.ui-widget-header" });
+    $("#sortable").sortable({
+        revert: 1000
+    });
+    $("#draggable").draggable({
+        connectToSortable: "#sortable",
+        helper: "clone",
+        revert: "invalid"
+    });
+    $("ul, li").draggableSelection();
 });
