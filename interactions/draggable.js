@@ -1,9 +1,18 @@
 $(function() {
     $( "#draggable").draggable({
-        revert: true
+        snap: true
     });
-    $("#draggable2").draggable({
-        revert: true,
-        helper: "clone"
+    $( "#draggable2" ).draggable({
+        snap: ".ui-widget-header"
+    });
+    $( "#draggable2" ).draggable({
+        snap: ".ui-widget-header",
+        snapMode: "outer"
+    });
+    $( "#draggable4" ).draggable({
+        grid: [ 20, 20 ]
+    });
+    $( "#draggable5" ).draggable({
+        grid: [ 80, 80 ]
     });
 });

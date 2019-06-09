@@ -58,3 +58,46 @@ _Multiple types supported:_
 - ***String***: If set to `invalid`, revert will only occur if the draggable has not been dropped on a droppable. For `valid`, it's the other way around.
 - ***Function***: A function to determine whether the element should revert to its start position. The function must return true to revert the element.
 
+___
+
+## snap
+
+Type: **Boolean or Selector**
+
+Default: **false**
+
+Whether the element should snap to other elements.
+
+_Multiple types supported:_
+
+- ***Boolean***: When set to true, the element will snap to all other draggable elements.
+- ***Selector***: A selector specifying which elements to snap to.
+
+```
+// Getter
+var snap = $( ".selector" ).draggable( "option", "snap" );
+
+// Setter
+$( ".selector" ).draggable( "option", "snap", true );
+```
+
+---
+
+## snapMode
+
+Type: **String**
+
+Default: **"both"**
+
+Determines which edges of snap elements the draggable will snap to. Ignored if the snap option is false.
+
+Possible values: `inner`, `outer`, `both`.
+
+```
+// Getter
+var snapMode = $( ".selector" ).draggable( "option", "snapMode" );
+
+// Setter
+$( ".selector" ).draggable( "option", "snapMode", "inner" );
+```
+
