@@ -21,7 +21,7 @@ $( ".selector" ).draggable( "option", "connectToSortable", "#my-sortable" );
 ```
 ---
 
-## revert
+## Sortable Widget: revert
 
 Type: **Boolean or Number**
 
@@ -29,7 +29,7 @@ Default: **false**
 
 Whether the sortable items should revert to their new positions using a smooth animation.
 
-Multiple types supported:
+_Multiple types supported:_
 
 - ***Boolean***: When set to true, the items will animate with the default duration.
 - ***Number***: The duration for the animation, in milliseconds.
@@ -42,4 +42,19 @@ var revert = $( ".selector" ).sortable( "option", "revert" );
 $( ".selector" ).sortable( "option", "revert", true );
 ```
 
+---
+
+## Draggable Widget: revert
+
+Type: **Boolean or String or Function()**
+
+Default: **false**
+
+Whether the element should revert to its start position when dragging stops.
+
+_Multiple types supported:_
+
+- ***Boolean***: If set to true the element will always revert.
+- ***String***: If set to `invalid`, revert will only occur if the draggable has not been dropped on a droppable. For `valid`, it's the other way around.
+- ***Function***: A function to determine whether the element should revert to its start position. The function must return true to revert the element.
 

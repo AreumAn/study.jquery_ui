@@ -1,11 +1,9 @@
 $(function() {
-    $("#sortable").sortable({
-        revert: 1000
+    $( "#draggable").draggable({
+        revert: true
     });
-    $("#draggable").draggable({
-        connectToSortable: "#sortable",
-        helper: "clone",
-        revert: "invalid"
+    $("#draggable2").draggable({
+        revert: true,
+        helper: "clone"
     });
-    $("ul, li").draggableSelection();
 });
